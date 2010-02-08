@@ -56,7 +56,7 @@ $.widget( "demo.progressbar", {
 });
 
 // **CHANGE** set default values
-$.jsmag.progressbar.defaults = {
+$.demo.progressbar.defaults = {
 	value: 0
 };
 

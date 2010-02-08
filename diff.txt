@@ -1,0 +1,24 @@
+3a4,8
+> 	// **CHANGE** set default values
+> 	options: {
+> 		value: 0
+> 	},
+> 
+5c10
+< 	_init: function() {
+---
+> 	_create: function() {
+16c21
+< 		$.widget.prototype.destroy.call( this );
+---
+> 		$.Widget.prototype.destroy.call( this );
+32c37
+< 	_setData: function( key, value ) {
+---
+> 	_setOption: function( key, value ) {
+58,62d62
+< // **CHANGE** set default values
+< $.jsmag.progressbar.defaults = {
+< 	value: 0
+< };
+< 

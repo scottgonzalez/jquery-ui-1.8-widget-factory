@@ -1,3 +1,5 @@
+(function( $ ) {
+
 $.widget( "demo.progressbar", {
 	// **CHANGE** initialize the plugin
 	_init: function() {

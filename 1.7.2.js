@@ -16,16 +16,8 @@ $.widget( "demo.progressbar", {
 		$.widget.prototype.destroy.call( this );
 	},
 
-	value: function( value ) {
-		// no value passed, act as a getter
-		if ( value === undefined ) {
-			return this.options.value;
-
-		// value passed, act as a setter
-		} else {
-			this.options.value = this._constrain( value );
-			this._update();
-		}
+	complete: function() {
+		return this.options.value === 100;
 	},
 
 	// **CHANGE** react to option changes after initialization
@@ -54,6 +46,9 @@ $.widget( "demo.progressbar", {
 		}
 	}
 });
+
+// **CHANGE** identify getters
+$.demo.progressbar.getter = "complete";
 
 // **CHANGE** set default values
 $.demo.progressbar.defaults = {

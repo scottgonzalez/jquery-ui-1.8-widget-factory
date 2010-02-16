@@ -12,13 +12,16 @@
 < 		$.widget.prototype.destroy.call( this );
 ---
 > 		$.Widget.prototype.destroy.call( this );
-32c37
+24c29
 < 	_setData: function( key, value ) {
 ---
 > 	_setOption: function( key, value ) {
-58,62d62
+50,57d54
+< // **CHANGE** identify getters
+< $.demo.progressbar.getter = "complete";
+< 
 < // **CHANGE** set default values
-< $.jsmag.progressbar.defaults = {
+< $.demo.progressbar.defaults = {
 < 	value: 0
 < };
 < 

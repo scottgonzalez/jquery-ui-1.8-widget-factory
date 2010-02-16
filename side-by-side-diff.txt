@@ -1,4 +1,5 @@
-	_init: function() {				      |		_create: function() {
-		$.widget.prototype.destroy.call( this );      |			$.Widget.prototype.destroy.call( this );
-	_setData: function( key, value ) {		      |		_setOption: function( key, value ) {
-$.demo.progressbar.defaults = {				      |	$.demo.progressbar.prototype.options = {
+    _init: function() {                          |     _create: function() {
+        $.widget.prototype.destroy.call( this ); |         $.Widget.prototype.destroy.call( this );
+    _setData: function( key, value ) {		     |     _setOption: function( key, value ) {
+$.demo.progressbar.getter = "complete";          <
+$.demo.progressbar.defaults = {                  | $.demo.progressbar.prototype.options = {
